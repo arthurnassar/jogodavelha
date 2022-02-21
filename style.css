@@ -1,0 +1,55 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center  ;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+    border: 1px solid grey;
+}
+
+.stage {
+    display: grid;
+    gap: 6px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+}
+
+.stage div {
+    display: flex;  
+    gap: 4px;  
+}
+
+.o {
+    position: relative;
+}
+
+.o::after {
+    content: "\1F42F";;
+    display: block;
+    font-size: 70px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+.x {
+    position: relative;
+}
+
+.x::after {
+    content: "\1F981";;
+    display: block;
+    font-size: 70px;
+    line-height: 100px;
+    position: absolute;
+    top: 0;
+    bottom:0px;
+    left: 0;
+    right: 0;
+}
